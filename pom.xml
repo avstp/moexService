@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
+		<openApiVersion>1.6.4</openApiVersion>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,6 +41,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${openApiVersion}</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

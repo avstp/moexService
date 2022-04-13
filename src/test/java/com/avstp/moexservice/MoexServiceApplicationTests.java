@@ -1,4 +1,4 @@
-package com.avstp.moexService;
+package com.avstp.moexservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,0 +1,13 @@
+server:
+  port: 8005
+
+moex:
+  bonds:
+    corporate:
+      url: "https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities.json?iss.meta=off&iss.only=securities&securities.columns=SECID,PREVADMITTEDQUOTE,SHORTNAME"
+    government:
+      url: "https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.json?iss.meta=off&iss.only=securities&securities.columns=SECID,PREVADMITTEDQUOTE,SHORTNAME"
+
+logging:
+  level:
+    com.avstp.moexservice.client.moex: DEBUG
