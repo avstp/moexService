@@ -1,5 +1,8 @@
 server:
   port: 8005
+  cache:
+    caffeine:
+      spec: maximumSize=48, expireAfterAccess=1h
 
 moex:
   bonds:

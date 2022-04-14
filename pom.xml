@@ -17,6 +17,7 @@
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
 		<openApiVersion>1.6.4</openApiVersion>
+		<caffeinVersion>3.0.6</caffeinVersion>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -47,6 +48,12 @@
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>${openApiVersion}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+			<version>${caffeinVersion}</version>
+		</dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

@@ -1,5 +1,7 @@
 package com.avstp.moexservice.controller;
 
+import com.avstp.moexservice.dto.FigiesDto;
+import com.avstp.moexservice.dto.StockPricesDto;
 import com.avstp.moexservice.dto.StocksDto;
 import com.avstp.moexservice.dto.TickersDto;
 import com.avstp.moexservice.service.BondService;
@@ -17,5 +19,10 @@ public class MoexBondController {
     @GetMapping
     public StocksDto getBondsFromMoex(TickersDto tickersDto) {
         return bondService.getBondsByTickers(tickersDto);
+    }
+
+    @GetMapping("/price")
+    public StockPricesDto getPricesByFigi(FigiesDto figiesDto) {
+        return bondService.getPricesByFigies(figiesDto);
     }
 }
